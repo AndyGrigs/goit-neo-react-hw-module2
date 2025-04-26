@@ -1,3 +1,40 @@
-section{
-    padding: 2em;
+
+.App {
+  text-align: center;
+}
+
+
+section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+article {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.Feedback {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.Feedback div {
+  width: 32%;
 }

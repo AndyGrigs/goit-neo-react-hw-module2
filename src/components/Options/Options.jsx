@@ -4,7 +4,7 @@ import st from './Options.module.css';
 
 const Options = ({ onLeaveFeed, total }) => {
     return (
-        <div>
+        <div className={st.Options}>
             <button className={st.button} type="button" onClick={() => onLeaveFeed('good')}>
                 Good
             </button>
@@ -16,7 +16,7 @@ const Options = ({ onLeaveFeed, total }) => {
             </button>
 
             {total > 0 && (
-                <button type="button" onClick={() => onLeaveFeed('reset')}>
+                <button className={st.button} type="button" onClick={() => onLeaveFeed('reset')}>
                     Reset
                 </button>
             )}

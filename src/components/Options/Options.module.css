@@ -1,0 +1,22 @@
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  .button:active {
+    transform: translateY(1px);
+  }
+
+
+  .Options button {
+    margin-left: 1em;
+  }
