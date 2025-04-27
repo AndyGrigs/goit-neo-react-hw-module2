@@ -2,21 +2,21 @@ import React from 'react';
 
 import st from './Options.module.css';
 
-const Options = ({ onLeaveFeed, total }) => {
+const Options = ({ onLeaveFeedback, total }) => {
     return (
         <div className={st.Options}>
-            <button className={st.button} type="button" onClick={() => onLeaveFeed('good')}>
+            <button className={st.button} type="button" onClick={() => onLeaveFeedback('good')}>
                 Good
             </button>
-            <button className={st.button} type="button" onClick={() => onLeaveFeed('neutral')}>
+            <button className={st.button} type="button" onClick={() => onLeaveFeedback('neutral')}>
                 Neutral
             </button>
-            <button className={st.button} type="button" onClick={() => onLeaveFeed('bad')}>
+            <button className={st.button} type="button" onClick={() => onLeaveFeedback('bad')}>
                 Bad
             </button>
 
             {total > 0 && (
-                <button className={st.button} type="button" onClick={() => onLeaveFeed('reset')}>
+                <button className={st.button} type="button" onClick={() => onLeaveFeedback('reset')}>
                     Reset
                 </button>
             )}

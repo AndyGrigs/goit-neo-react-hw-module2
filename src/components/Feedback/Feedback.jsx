@@ -1,6 +1,6 @@
 import st from './Feedback.module.css';
 
-const Feedback = ({ good, neutral, bad, total, percets }) => {
+const Feedback = ({ good, neutral, bad, total, percents }) => {
     return (
         <div className={st.Feedback}>
             <h2>Feedback Statistics</h2>
@@ -9,7 +9,7 @@ const Feedback = ({ good, neutral, bad, total, percets }) => {
                 <li>Neutral: {neutral}</li>
                 <li>Bad: {bad}</li>
                 <li>Total: {total}</li>
-                <li>Positive Feedback: {percets()}</li>
+                <li>Positive Feedback: {percents}</li>
             </ul>
         </div>
     );
